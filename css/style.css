@@ -177,12 +177,11 @@ img {
 
 /* ===== Hero ===== */
 .hero {
-    min-height: 100vh !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    padding: 64px 24px 80px;
+    min-height: 100vh;
+    padding-top: 30vh;
+    padding-bottom: 10vh;
+    box-sizing: border-box;
+    text-align: center;
     background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-surface) 100%);
 }
 
