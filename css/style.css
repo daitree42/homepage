@@ -180,8 +180,6 @@ img {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
     padding: 64px 24px 80px;
     background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-surface) 100%);
 }
@@ -262,22 +260,23 @@ img {
 
 .btn-outline {
     background: transparent;
-    color: #374151;
-    border: 1.5px solid #374151;
+    color: #2d6a4f;
+    border: 1.5px solid #2d6a4f;
+    border-radius: 8px;
 }
 .btn-outline:hover {
-    background: #374151;
+    background: #2d6a4f;
     color: #fff;
 }
 
 /* Dark mode overrides for outline button */
 [data-theme="dark"] .btn-outline {
-    color: #d4d4d8;
-    border-color: #d4d4d8;
+    color: #52b788;
+    border-color: #52b788;
 }
 [data-theme="dark"] .btn-outline:hover {
-    background: #d4d4d8;
-    color: #18181b;
+    background: #52b788;
+    color: #09090b;
 }
 
 .btn-small {
