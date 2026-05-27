@@ -177,11 +177,11 @@ img {
 
 /* ===== Hero ===== */
 .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
     padding: 64px 24px 80px;
     background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-surface) 100%);
 }
@@ -198,8 +198,8 @@ img {
 }
 
 .hero-name {
-    font-size: clamp(64px, 12vw, 96px);
-    font-weight: 800;
+    font-size: clamp(80px, 16vw, 128px);
+    font-weight: 900;
     line-height: 1.0;
     margin-bottom: 16px;
     letter-spacing: -0.02em;
