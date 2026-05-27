@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人主页 - 作品与技能展示">
+    <title>主页 | 树</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== 导航 ===== -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">树</a>
+            <button class="nav-toggle" id="navToggle" aria-label="菜单">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active">首页</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="切换主题">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <p class="hero-greeting">你好，我是</p>
+            <h1 class="hero-name">树</h1>
+            <p class="hero-tagline">写代码、写文字、写生活</p>
+            <p class="hero-desc">
+                一名开发者与写作者，热爱用技术解决问题，用文字记录思考。
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">查看作品</a>
+                <a href="#contact" class="btn btn-outline">联系我</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 技能 ===== -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">技能</h2>
+            <p class="section-subtitle">日常使用的工具和技术</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <h3>Python</h3>
+                    <p>后端开发、自动化脚本、数据分析</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>前端开发、交互设计</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                    <h3>CLI & DevOps</h3>
+                    <p>Linux、Git、CI/CD 自动化</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <h3>写作</h3>
+                    <p>技术博客、深度报道</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>数据</h3>
+                    <p>SQL、ETL、可视化</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                    <h3>云服务</h3>
+                    <p>部署、运维、Serverless</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 项目 ===== -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <h2 class="section-title">项目</h2>
+            <p class="section-subtitle">部分作品和开源项目</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-cover" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                        <span class="project-label">博客</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>个人博客</h3>
+                        <p>基于 Python 的静态站点生成器，支持 Markdown、分页、RSS。</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>Jinja2</span><span>GitHub Pages</span>
+                        </div>
+                        <a href="https://daitree42.github.io/blog-pages/" class="btn btn-small" target="_blank">查看 →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-cover" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                        <span class="project-label">工具</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>深度报道写作</h3>
+                        <p>文化/人物类深度报道写作项目，涵盖大纲、草稿、资料管理。</p>
+                        <div class="project-tags">
+                            <span>写作</span><span>采访</span><span>报道</span>
+                        </div>
+                        <a href="#" class="btn btn-small">查看 →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-cover" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                        <span class="project-label">自动化</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>云备份工具</h3>
+                        <p>一键备份服务器文件到云存储的 CLI 工具，支持增量同步。</p>
+                        <div class="project-tags">
+                            <span>Bash</span><span>Rclone</span><span>自动化</span>
+                        </div>
+                        <a href="#" class="btn btn-small">查看 →</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-cover" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                        <span class="project-label">AI</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Claude Code 学习系列</h3>
+                        <p>从安装到高级用法的完整学习笔记和实践指南。</p>
+                        <div class="project-tags">
+                            <span>AI</span><span>Claude</span><span>教程</span>
+                        </div>
+                        <a href="#" class="btn btn-small">查看 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 联系 ===== -->
+    <section class="section" id="contact">
+        <div class="container contact-content">
+            <h2 class="section-title">联系</h2>
+            <p class="section-subtitle">欢迎交流</p>
+            <div class="contact-links">
+                <a href="mailto:hello@example.com" class="contact-item" title="邮箱">
+                    <i class="fas fa-envelope"></i>
+                    <span>hello@example.com</span>
+                </a>
+                <a href="https://github.com/daitree42" class="contact-item" title="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>daitree42</span>
+                </a>
+                <a href="#" class="contact-item" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>@daitree42</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 页脚 ===== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 树. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
