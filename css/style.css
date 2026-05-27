@@ -4,8 +4,8 @@
     --color-surface: #ffffff;
     --color-text: #18181b;
     --color-text-secondary: #52525b;
-    --color-accent: #6366f1;
-    --color-accent-hover: #4f46e5;
+    --color-accent: #2d6a4f;
+    --color-accent-hover: #1b4332;
     --color-border: #e4e4e7;
     --color-nav-bg: rgba(250, 250, 250, 0.85);
     --color-card-shadow: rgba(0, 0, 0, 0.06);
@@ -19,8 +19,8 @@
     --color-surface: #18181b;
     --color-text: #fafafa;
     --color-text-secondary: #a1a1aa;
-    --color-accent: #818cf8;
-    --color-accent-hover: #6366f1;
+    --color-accent: #52b788;
+    --color-accent-hover: #40916c;
     --color-border: #27272a;
     --color-nav-bg: rgba(9, 9, 11, 0.85);
     --color-card-shadow: rgba(0, 0, 0, 0.3);
@@ -91,10 +91,17 @@ img {
 }
 
 .nav-logo {
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 700;
     color: var(--color-text);
     letter-spacing: 0.05em;
+}
+.nav-logo-sub {
+    font-size: 12px;
+    font-weight: 400;
+    color: #9ca3af;
+    letter-spacing: 0.05em;
+    margin-left: 4px;
 }
 .nav-logo:hover {
     color: var(--color-accent);
@@ -175,7 +182,7 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 120px 24px 80px;
+    padding: 64px 24px 80px;
     background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-surface) 100%);
 }
 
@@ -184,16 +191,16 @@ img {
 }
 
 .hero-greeting {
-    font-size: 1.1rem;
-    color: var(--color-accent);
-    font-weight: 500;
+    font-size: 14px;
+    color: #9ca3af;
+    letter-spacing: 0.08em;
     margin-bottom: 12px;
 }
 
 .hero-name {
-    font-size: 3.5rem;
+    font-size: clamp(64px, 12vw, 96px);
     font-weight: 800;
-    line-height: 1.15;
+    line-height: 1.0;
     margin-bottom: 16px;
     letter-spacing: -0.02em;
 }
@@ -224,8 +231,8 @@ img {
     align-items: center;
     gap: 8px;
     padding: 12px 28px;
-    border-radius: 10px;
-    font-size: 0.95rem;
+    border-radius: 8px;
+    font-size: 15px;
     font-weight: 600;
     border: 2px solid transparent;
     cursor: pointer;
@@ -245,12 +252,22 @@ img {
 
 .btn-outline {
     background: transparent;
-    color: var(--color-text);
-    border-color: var(--color-border);
+    color: #374151;
+    border: 1.5px solid #374151;
 }
 .btn-outline:hover {
-    border-color: var(--color-accent);
-    color: var(--color-accent);
+    background: #374151;
+    color: #fff;
+}
+
+/* Dark mode overrides for outline button */
+[data-theme="dark"] .btn-outline {
+    color: #d4d4d8;
+    border-color: #d4d4d8;
+}
+[data-theme="dark"] .btn-outline:hover {
+    background: #d4d4d8;
+    color: #18181b;
 }
 
 .btn-small {
@@ -484,9 +501,6 @@ img {
         margin-top: 8px;
     }
 
-    .hero-name {
-        font-size: 2.5rem;
-    }
     .hero-tagline {
         font-size: 1.1rem;
     }
@@ -518,9 +532,6 @@ img {
 @media (max-width: 480px) {
     .skills-grid {
         grid-template-columns: 1fr;
-    }
-    .hero-name {
-        font-size: 2rem;
     }
     .hero-actions {
         flex-direction: column;
